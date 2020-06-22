@@ -6,13 +6,12 @@ on:
       - master
 
 jobs:
-  regex:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: butlerlogic/action-autotag@master
+    - uses: butlerlogic/action-autotag@stable
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        strategy: regex
-        root: "/version"
+        root: "./version"
         regex_pattern: "(\d*\.)(\d*\.)(\d*)" 
