@@ -13,5 +13,5 @@ jobs:
     - uses: butlerlogic/action-autotag@master
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        root: "version"
+        root: "./version"
         regex_pattern: "(\d*\.)(\d*\.)(\d*)" 
