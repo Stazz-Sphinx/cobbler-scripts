@@ -15,4 +15,4 @@ jobs:
       with:
         GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         root: "version"
-        regex_pattern: '(\d*)\.(\d*)\.(\d*)' 
+        regex_pattern: '(\d*)\\.(\d*)\\.(\d*)' 
